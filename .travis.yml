@@ -1,2 +1,8 @@
 language: c
-script: gcc hello.c
+script: 
+    - make
+    - make test
+notification:
+    email:
+        on_success: always
+        on_failure: always
